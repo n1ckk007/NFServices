@@ -2,8 +2,9 @@ import React from "react";
 import { CustomButton } from "../custom-button/CustomButton";
 import banks from "../../assets/banks.png";
 import "./Home.scss";
-import { ContactForm } from "../contact-form/ContactForm";
+
 import { Spring } from "react-spring/renderprops";
+import {ReactComponent as HomeSvg} from '../../assets/personal_finance.svg'
 
 export const Home = () => (
   <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ duration: 1300 }}>
@@ -11,7 +12,7 @@ export const Home = () => (
       <div style={props}>
         <div className="container">
           <div className="row mt-4">
-            <div className="col-md mb-4">
+            <div className="col-md mb-4 ">
               <h1>Our Lenders</h1>
 
               <p>
@@ -19,15 +20,18 @@ export const Home = () => (
               </p>
               <CustomButton text="Find out more" route="our_services" />
             </div>
-            <div className="col-md mb-4">
+            <div className="col-md mb-4 ">
               <img src={banks} alt="Banks" className="banksImg" />
             </div>
           </div>
           <div className="row mt-4">
-            <div className="col-md mb-4">
+          <div className="col-md mb-4 order-2 order-md-1">
+              <HomeSvg className='svg'/>
+            </div>
+            <div className="col-md mb-4 order-1 order-md-2">
               <h1>We are here to help</h1>
 
-              <p>
+              <p className='mt-4'>
                 Are you looking to refinance your home loan?
                 <br />
                 <br />
@@ -43,9 +47,7 @@ export const Home = () => (
               </p>
               <CustomButton text="Contact us" route="contact" />
             </div>
-            <div className="col-md mb-4">
-              <ContactForm />
-            </div>
+            
           </div>
         </div>
       </div>
