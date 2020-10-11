@@ -1,0 +1,15 @@
+.custom-button {
+  display: inline-block;
+  color: white;
+  background-color: var(--mainBlue);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--mainBlue);
+  height: 150px;
+
+  p {
+    color: whitesmoke;
+    text-align: right;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}

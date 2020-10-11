@@ -1,0 +1,11 @@
+.people-container {
+  text-align: center;
+  .person {
+    display: inline-block;
+    width: 300px;
+
+    .text {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.card-title {
+  color: var(--mainBlue);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.card {
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+  }
+  .card-img-top {
+    display: block;
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+  }
+
+  .img-tint {
+    background-color: rgba(83, 98, 160, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5rem;
+  }
+}

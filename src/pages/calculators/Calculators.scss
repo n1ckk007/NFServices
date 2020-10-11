@@ -1,0 +1,26 @@
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #f3f3f3;
+  width: 280px;
+
+  a {
+    color: var(--mainBlue);
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+iframe {
+  height: 810px;
+  width: 100%;
+  scroll-margin: 50px;
+}
